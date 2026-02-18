@@ -1,10 +1,4 @@
-# Use the official OpenJDK 17 image from Docker Hub
 FROM public.ecr.aws/docker/library/openjdk:17
-# Set working directory inside the container
-WORKDIR /app
-# Copy the compiled Java application JAR file into the container
-COPY ./target/ProductAppAWS-0.0.1-SNAPSHOT.jar
-# Expose the port the Spring Boot application will run on
+ADD target/ProductAppAWS-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "ProductAppAWS-0.0.1-SNAPSHOT.jar"]
 EXPOSE 8080
-# Command to run the application
-CMD ["java", "-jar", "ProductAppAWS-0.0.1-SNAPSHOT.jar"]
