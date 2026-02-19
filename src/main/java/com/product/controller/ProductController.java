@@ -31,6 +31,7 @@ public class ProductController {
 		productList.add(new Product(++productIdCounter, "Cupboard", 8, 7000));
 		productList.add(new Product(++productIdCounter, "Sofa", 20, 8500));
 		productList.add(new Product(++productIdCounter, "Double Bed", 4, 9000));
+		productList.add(new Product(++productIdCounter, "Single Bed", 10, 6500));
 	}
 	
 	@GetMapping("/product")
