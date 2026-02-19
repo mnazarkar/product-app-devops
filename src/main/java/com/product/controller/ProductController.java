@@ -27,6 +27,10 @@ public class ProductController {
 	static {
 		productList.add(new Product(++productIdCounter, "Chairs", 30, 1500));
 		productList.add(new Product(++productIdCounter, "Tables", 15, 6000));
+		productList.add(new Product(++productIdCounter, "Tv Unit", 5, 4000));
+		productList.add(new Product(++productIdCounter, "Cupboard", 8, 7000));
+		productList.add(new Product(++productIdCounter, "Sofa", 20, 8500));
+		productList.add(new Product(++productIdCounter, "Double Bed", 4, 9000));
 	}
 	
 	@GetMapping("/product")
